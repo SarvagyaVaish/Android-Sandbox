@@ -7,10 +7,12 @@ import android.view.View;
 import android.widget.Button;
 
 import com.survy.androidsandbox.sharedElementTransition.FromActivity;
+import com.survy.androidsandbox.slidingPanel.ContentAActivity;
 
 public class CatalogActivity extends AppCompatActivity {
 
     private Button sharedElementTransitionButton;
+    private Button slidingPanelButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +27,18 @@ public class CatalogActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(CatalogActivity.this, FromActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        /*
+         * Launch sliding panel demo
+         */
+        slidingPanelButton = (Button) findViewById(R.id.sliding_panel_button);
+        slidingPanelButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(CatalogActivity.this, ContentAActivity.class);
                 startActivity(intent);
             }
         });

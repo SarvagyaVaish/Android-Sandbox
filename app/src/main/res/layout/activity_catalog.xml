@@ -21,6 +21,12 @@
             android:layout_height="56dp"
             android:text="Shared Image Transition" />
 
+        <Button
+            android:id="@+id/sliding_panel_button"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Sliding Panel" />
+
     </LinearLayout>
 
 </RelativeLayout>
