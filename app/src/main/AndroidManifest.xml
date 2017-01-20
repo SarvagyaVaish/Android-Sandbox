@@ -19,10 +19,10 @@
 
         <activity
             android:name=".sharedElementTransition.FromActivity"
-            android:label="Shared Element Transition" />
+            android:label="Simple Shared Element Transition" />
         <activity
             android:name=".sharedElementTransition.ToActivity"
-            android:label="Shared Element Transition" />
+            android:label="Simple Shared Element Transition" />
 
         <activity
             android:name=".slidingPanel.ContentAActivity"

@@ -19,4 +19,14 @@
         android:src="@drawable/profile"
         android:transitionName="@string/shared_image_transition_name" />
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="bottom"
+        android:text="* Click the image for details"/>
+
 </RelativeLayout>

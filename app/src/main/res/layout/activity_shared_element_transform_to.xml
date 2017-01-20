@@ -8,23 +8,57 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="72dp"
+        android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <ImageView
             android:id="@+id/profile_image_to"
             android:layout_width="40dp"
-            android:layout_height="match_parent"
+            android:layout_height="40dp"
             android:layout_margin="16dp"
             android:src="@drawable/profile"
             android:transitionName="@string/shared_image_transition_name" />
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center_vertical"
-            android:text="Sarvagya Vaish" />
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:gravity="center_vertical"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimary"
+                android:text="Sarvagya Vaish" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:gravity="center_vertical"
+                android:text="Address: ..." />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:gravity="center_vertical"
+                android:text="Phone number: ..." />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:gravity="center_vertical"
+                android:text="Email address: ..." />
+
+        </LinearLayout>
 
     </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:padding="16dp"
+        android:text="* Click the back button" />
 
 </FrameLayout>
