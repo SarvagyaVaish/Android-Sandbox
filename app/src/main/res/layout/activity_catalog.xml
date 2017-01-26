@@ -27,6 +27,12 @@
             android:layout_height="56dp"
             android:text="Persistent Sliding Panel" />
 
+        <Button
+            android:id="@+id/tabs_in_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Tabs In Fragment" />
+
     </LinearLayout>
 
 </RelativeLayout>

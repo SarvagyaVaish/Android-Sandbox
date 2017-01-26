@@ -8,11 +8,13 @@ import android.widget.Button;
 
 import com.survy.androidsandbox.sharedElementTransition.FromActivity;
 import com.survy.androidsandbox.slidingPanel.ContentAActivity;
+import com.survy.androidsandbox.tabsInFragment.TabbedFragmentParentActivity;
 
 public class CatalogActivity extends AppCompatActivity {
 
     private Button sharedElementTransitionButton;
     private Button slidingPanelButton;
+    private Button tabsInFragmentButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +41,18 @@ public class CatalogActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(CatalogActivity.this, ContentAActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        /*
+         * Launch tabs in fragment demo
+         */
+        tabsInFragmentButton = (Button) findViewById(R.id.tabs_in_fragment);
+        tabsInFragmentButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(CatalogActivity.this, TabbedFragmentParentActivity.class);
                 startActivity(intent);
             }
         });

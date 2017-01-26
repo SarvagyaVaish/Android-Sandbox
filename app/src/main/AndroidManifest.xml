@@ -20,6 +20,7 @@
         <activity
             android:name=".sharedElementTransition.FromActivity"
             android:label="Simple Shared Element Transition" />
+
         <activity
             android:name=".sharedElementTransition.ToActivity"
             android:label="Simple Shared Element Transition" />
@@ -27,9 +28,16 @@
         <activity
             android:name=".slidingPanel.ContentAActivity"
             android:label="Sliding Panel" />
+
         <activity
             android:name=".slidingPanel.ContentBActivity"
             android:label="Sliding Panel" />
+
+        <activity
+            android:name=".tabsInFragment.TabbedFragmentParentActivity"
+            android:label="Tabs In Fragment"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
 
     </application>
 
